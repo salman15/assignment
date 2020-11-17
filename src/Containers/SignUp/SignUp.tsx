@@ -11,14 +11,19 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const response = UseGet();
+  const response = UseGet("https://postman-echo.com/delay/0");
   const newUser = UsePost();
+
+  console.log("response", response);
+  console.log("newUser", newUser);
 
   return (
     <Container>
       <Form title="I'm a title" description="I'm a description">
+        {response.error.message && <p>Something went wrong</p>}
+
         <Input
-          label="first name"
+          label="First name"
           warning={firstName.length === 0}
           warningText="Incorrect name"
           placeholder="enter your name"
@@ -27,7 +32,7 @@ const SignUp = () => {
           required
         />
         <Input
-          label="last name"
+          label="Last name"
           warning={lastName.length === 0}
           warningText="Incorrect lastName"
           placeholder="enter your lastName"
@@ -36,7 +41,7 @@ const SignUp = () => {
           required
         />
         <Input
-          label="email"
+          label="Email"
           warning={email.length === 0}
           warningText="Incorrect email"
           placeholder="enter your email"
@@ -45,7 +50,7 @@ const SignUp = () => {
           required
         />
         <Input
-          label="password"
+          label="Password"
           warning={password.length === 0}
           warningText="Incorrect password"
           placeholder="enter your password"
@@ -53,7 +58,7 @@ const SignUp = () => {
           setInputValue={setPassword}
           required
         />
-        <Button>Press me</Button>
+        <Button action={() => {}}>Press me</Button>
       </Form>
     </Container>
   );
