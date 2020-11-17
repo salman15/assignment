@@ -8,6 +8,7 @@ interface InputProps {
   placeholder: string;
   inputValue?: string | number;
   setInputValue: Function;
+  required?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -17,10 +18,15 @@ const Input: React.FC<InputProps> = ({
   setInputValue,
   warning,
   warningText,
+  required,
 }) => {
   return (
     <InputContainer>
-      {label && <Label>{label}</Label>}
+      {label && (
+        <Label>
+          {label} {required && `*`}
+        </Label>
+      )}
       <InputLayout
         placeholder={placeholder}
         value={inputValue}
