@@ -1,7 +1,9 @@
 import React from "react";
-import { StyledComponent } from "styled-components";
 import { ButtonStyle, ButtonLink } from "./Button.style";
 
+/**
+ * Map of button styles
+ */
 const buttonMap = {
   default: ButtonStyle,
   link: ButtonLink,
@@ -14,9 +16,6 @@ interface ButtonProps {
   disabled?: boolean;
   link?: string;
 }
-
-type ButtonMapType = StyledComponent<"button", any, {}, never> &
-  StyledComponent<"a", any, {}, never>;
 
 const Button: React.FC<ButtonProps> = ({
   children,

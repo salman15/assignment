@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { config } from "../Config/Config";
 
+/**
+ * Custom hook call that performs a basic get request to an API
+ * @string url
+ * @returns object
+ */
 export const UseGet = (url: string) => {
   const [response, setResponse] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const request = async () => {
-    // Default options are marked with *
     try {
       const response = await axios.get(config.baseUrl + url);
       setResponse(response);

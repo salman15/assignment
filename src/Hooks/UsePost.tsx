@@ -2,6 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { config } from "../Config/Config";
 
+/**
+ * Custom hook that perfoms an basic post request with given paramaters
+ * @string url
+ * @object postData
+ * @boolean send
+ * @function setSend
+ * @retuns object
+ */
 export const UsePost = (
   url: string,
   postData: any,
