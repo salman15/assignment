@@ -91,3 +91,15 @@ The container component is a simple component that gives structure to a set of c
 props:
 - Childeren
 
+### Form
+The form component is ment to give structure to its child components and apply the proper form styling for the application.
+When the Error prop is true the components border will be set to `border: solid 1px red;` to indicate something went wrong.
+Other properties the component accepts are Title properties and description properties to display the components Title and description.
+
+props:
+- Childeren
+- Title
+- Description
+- Error
+
+### Input
