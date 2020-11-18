@@ -13,3 +13,6 @@ p, a, button{
     font-family: 'Roboto', sans-serif;
 }
 
+*, ::after, ::before{
+    box-sizing: border-box;
+}
