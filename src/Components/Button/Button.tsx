@@ -20,7 +20,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   children,
   action = () => {},
-  disabled = false,
+  disabled,
   type = "default",
   link = "",
 }) => {

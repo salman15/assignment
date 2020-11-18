@@ -3,12 +3,12 @@ import axios from "axios";
 import { config } from "../Config/Config";
 
 /**
- * Custom hook that perfoms an basic post request with given paramaters
+ * Custom hook that performs an basic post request with given parameters
  * @string url
  * @object postData
  * @boolean send
  * @function setSend
- * @retuns object
+ * @returns object
  */
 export const UsePost = (
   url: string,

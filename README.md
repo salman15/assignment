@@ -6,14 +6,14 @@ This App is an assignment I've made to create an ReactJS application with the fo
     - first name, last name, email and password.
     - Alle fields required and validated.
     - Password validation that checks casing.
-- The app should be able to peform api calls to postman-echo's API.
-- Use of latets version of React.
+- The app should be able to perform api calls to postman-echo's API.
+- Use of latest version of React.
 - Use of Hooks.
-- mordern JavaScript syntax.
+- modern JavaScript syntax.
 - Proper component logic and behavior.
 - Support for modern browsers with ES6 or newer.
 
-The application will be tested on correctness, code quality, testing, UX, documentation, techincal choices.
+The application will be tested on correctness, code quality, testing, UX, documentation, technical choices.
 
 
 
@@ -63,7 +63,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 I've built the application to run logic from the container and pass this logic down to it the components used inside this container.
 This way I have more control of what the components should do and also allows the components to be easier to reuse.
 
-- Containers are where the components are assembled and the states are passed down (unless specifick component requires to have its own state to decrease unnecessary rerenders).
+- Containers are where the components are assembled and the states are passed down (unless specifics component requires to have its own state to decrease unnecessary re-renders).
 
 - Components are the building blocks for the containers and should be highly reusable across different containers if necessary. 
 
@@ -89,15 +89,15 @@ This way I have more control of what the components should do and also allows th
 The container component is a simple component that gives structure to a set of components.
 
 props:
-- Childeren
+- Children
 
 ### Form
-The form component is ment to give structure to its child components and apply the proper form styling for the application.
+The form component is meant to give structure to its child components and apply the proper form styling for the application.
 When the Error prop is true the components border will be set to `border: solid 1px red;` to indicate something went wrong.
 Other properties the component accepts are Title properties and description properties to display the components Title and description.
 
 props:
-- Childeren
+- Children
 - Title
 - Description
 - Error

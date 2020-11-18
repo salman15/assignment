@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const ButtonBase = styled.button`
+export const ButtonBase = styled.button<{ disabled: boolean }>`
   border: none;
   padding: 16px 32px;
   border-radius: 4px;
   margin: 16px 0;
   cursor: pointer;
+  ${(props) =>
+    props.disabled &&
+    css`
+      opacity: 0.8;
+      cursor: not-allowed;
+    `};
 `;
 
 export const ButtonStyle = styled(ButtonBase)`

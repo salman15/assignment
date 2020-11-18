@@ -89,7 +89,7 @@ const SignUp = () => {
         <Input
           label="Password"
           warning={showValidationErrors && !validPassword(password)}
-          warningText="Password must contain atleast one lowercase letter and one uppercase letter"
+          warningText="Password must contain at least one lowercase letter and one uppercase letter"
           placeholder="enter your password"
           inputValue={password}
           setInputValue={setPassword}
@@ -98,10 +98,10 @@ const SignUp = () => {
         />
         <Button
           disabled={
-            firstName.length > 0 &&
-            lastName.length > 0 &&
-            email.length > 0 &&
-            password.length > 0
+            firstName.length < 1 ||
+            lastName.length < 1 ||
+            email.length < 1 ||
+            password.length < 1
           }
           action={sendDate}
         >
