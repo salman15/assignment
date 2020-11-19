@@ -22,7 +22,6 @@ export const UsePost = (url: string, postData: any) => {
       // Default options are marked with *
       try {
         const response = await axios.post(config.baseUrl + url, postData);
-        console.log(response);
         setResponse(response);
         setLoading(false);
         setSend(false);
