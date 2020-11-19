@@ -38,6 +38,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `Running Mock Server`
+
+I've used JSON-server library to replicate the intended use of Postman.
+
+The mock json can be found in `db-mock/db.json` and be run using the following script: `npm run-script mock-server`
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -53,11 +59,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `Running Mock Server`
-
-I've used JSON-server library to replicate the intended use of Postman.
-
-The mock json can be found in `db-mock/db.json` and be run using the following script: `json-server --watch db-mock/db.json --port 3004 --delay 4000`
 
 # Libraries 🔧
 I've used several libraries to unsure that the application could be properly run and tested.
