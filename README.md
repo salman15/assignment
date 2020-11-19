@@ -98,8 +98,8 @@ This way I have more control of what the components should do and also allows th
 
 ## Components
 
-### Container
-The container component is a simple component that gives structure to a set of components.
+### Container, WarningText, Column
+The Container and Column component are a simple components that gives structure to a set of components. The Warning text component returns a text with the warning styling.
 
 props:
 - Children
@@ -140,7 +140,6 @@ props:
 - disabled
 - type
 - link
-
 
 ## Hooks 
 The custom hooks in this application are the `UsePost` hook and the `UseGet` hook. Both hooks are similar and both return a `response`, `loading`, `error` `value` and a `send` function. However the natur of the hooks are different. Where one is to send data and the other is to fetch it.
