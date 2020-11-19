@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Test the Column component Test if Column component renders with children 1`] = `[Function]`;
+
 exports[`Test the Container component Test if Container component renders with children 1`] = `
 <div>
   <div
@@ -9,5 +11,17 @@ exports[`Test the Container component Test if Container component renders with c
       I'm a Container
     </p>
   </div>
+</div>
+`;
+
+exports[`Test the WarningText component Test if WarningText component renders with children 1`] = `
+<div>
+  <p
+    class="sc-gsTCUz wIMML"
+  >
+    <p>
+      I'm a WarningText
+    </p>
+  </p>
 </div>
 `;

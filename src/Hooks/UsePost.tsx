@@ -12,7 +12,7 @@ import { config } from "../Config/Config";
  */
 export const UsePost = (url: string, postData: any) => {
   const firstUpdate = useRef(true);
-  const [response, setResponse] = useState({});
+  const [response, setResponse] = useState({ status: 0 });
   const [loading, setLoading] = useState(false);
   const [send, setSend] = useState(false);
   const [error, setError] = useState(false);
@@ -22,6 +22,7 @@ export const UsePost = (url: string, postData: any) => {
       // Default options are marked with *
       try {
         const response = await axios.post(config.baseUrl + url, postData);
+        console.log(response);
         setResponse(response);
         setLoading(false);
         setSend(false);
