@@ -6,6 +6,7 @@ interface FormProps {
   description?: string;
   children: React.ReactNode;
   error?: boolean;
+  submit?: Function;
 }
 
 const Form: React.FC<FormProps> = ({
@@ -13,9 +14,10 @@ const Form: React.FC<FormProps> = ({
   description,
   children,
   error = false,
+  submit = () => {},
 }) => {
   return (
-    <FormContainer error={error}>
+    <FormContainer error={error} onSubmit={(e) => submit(e)}>
       {title && <h1>{title}</h1>}
       {description && <p>{description}</p>}
       {children}
@@ -25,7 +27,7 @@ const Form: React.FC<FormProps> = ({
 
 export default Form;
 
-const FormContainer = styled.div<{ error: boolean }>`
+const FormContainer = styled.form<{ error: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;

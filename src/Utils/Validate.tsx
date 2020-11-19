@@ -27,14 +27,14 @@ export const validName = (name: string) => {
 };
 
 /**
- *  Checks if pasword contains lowercase and uppercase
+ *  Checks if password contains lowercase and uppercase
  * @string password
  * @returns {boolean}
  */
 export const validPassword = (password: string) => {
-  const passwordTest = /^([a-zA-Z]*)$/;
+  const passwordTest = /(?=.*[a-z])(?=.*[A-Z])/;
 
-  return password.length > 8 && passwordTest.test(password);
+  return password.length >= 8 && passwordTest.test(password);
 };
 
 /**
@@ -43,7 +43,6 @@ export const validPassword = (password: string) => {
  * @returns {boolean}
  */
 export const validateSignUp = (credentials: credentailProps) => {
-  console.log("passwordIsValid", validPassword(credentials.password));
   return (
     validName(credentials.firstName) &&
     validName(credentials.lastName) &&

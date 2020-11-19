@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Input component Test if Input component element displays the label and warning 1`] = `
+<div>
+  <div
+    class="sc-eCssSg iuAVtC"
+  >
+    <p
+      class="sc-gsTCUz bhSgbG"
+    >
+      I'm the label text
+       
+    </p>
+    <input
+      autocomplete="text"
+      class="sc-bdfBwQ fuywCS"
+      name="label"
+      placeholder="I'm a placeholder"
+      type="text"
+      value="I'm the input value"
+    />
+    <p
+      class="sc-gsTCUz sc-hKgILt bhSgbG eQjPkS"
+    >
+      I'm the warning text
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Test the Input component Test if Input component renders with input value 1`] = `
+<div>
+  <div
+    class="sc-eCssSg iuAVtC"
+  >
+    <input
+      autocomplete="text"
+      class="sc-bdfBwQ fuywCS"
+      name="label"
+      placeholder="I'm a placeholder"
+      type="text"
+      value="I'm the input value"
+    />
+  </div>
+</div>
+`;

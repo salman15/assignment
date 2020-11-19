@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Container component Test if Container component renders with children 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ dtXNoS"
+  >
+    <p>
+      I'm a Container
+    </p>
+  </div>
+</div>
+`;

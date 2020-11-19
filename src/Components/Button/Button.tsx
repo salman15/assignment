@@ -29,7 +29,6 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <ButtonType
-      className="shadow-content"
       onClick={() => action()}
       disabled={disabled}
       href={link}

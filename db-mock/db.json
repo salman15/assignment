@@ -1,0 +1,14 @@
+{
+  "delay": [
+    {
+      "id": 4,
+      "delay": 4
+    }
+  ],
+  "post": {
+    "firstName": "Salman Mohamed",
+    "lastName": "S",
+    "email": "salmannova@gmail.com",
+    "password": "secretSS"
+  }
+}

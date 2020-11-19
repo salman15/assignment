@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { config } from "../Config/Config";
 
@@ -8,25 +8,38 @@ import { config } from "../Config/Config";
  * @returns object
  */
 export const UseGet = (url: string) => {
+  const firstUpdate = useRef(true);
   const [response, setResponse] = useState({});
-  const [loading, setLoading] = useState(true);
+  const [get, setGet] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const request = async () => {
-    try {
-      const response = await axios.get(config.baseUrl + url);
-      setResponse(response);
-      setLoading(false);
-    } catch (error) {
-      setLoading(false);
-      setError(true);
-      console.log("error", error);
+    if (!firstUpdate.current || get) {
+      setLoading(true);
+      try {
+        const response = await axios.get(config.baseUrl + url);
+        setResponse(response);
+        setLoading(false);
+        setGet(false);
+      } catch (error) {
+        setLoading(false);
+        setError(true);
+        setGet(false);
+        console.log("error", error);
+      }
     }
+    firstUpdate.current = false;
   };
 
   useEffect(() => {
-    request();
+    get && request();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [get]);
 
-  return { response: response, loading: loading, error: error };
+  return {
+    getResponse: response,
+    getLoading: loading,
+    getError: error,
+    getData: setGet,
+  };
 };

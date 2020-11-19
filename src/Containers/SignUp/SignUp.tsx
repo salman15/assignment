@@ -17,23 +17,20 @@ const SignUp = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [send, setSend] = useState(false);
   const [showValidationErrors, setShowValidationErrors] = useState(false);
-  const response = UseGet("delay/0");
-  const newUser = UsePost(
-    "post",
-    {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      password: password,
-    },
-    send,
-    setSend
-  );
+  const { getLoading, getError, getData } = UseGet("delay/4");
+  const { postLoading, postError, sendPost } = UsePost("post", {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    password: password,
+  });
 
-  const sendDate = () => {
-    console.log("senddate");
+  /**
+   *
+   */
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
     if (
       validateSignUp({
         firstName: firstName,
@@ -42,7 +39,8 @@ const SignUp = () => {
         password: password,
       })
     ) {
-      setSend(true);
+      getData(true);
+      sendPost(true);
     } else {
       console.log("invalid");
       setShowValidationErrors(true);
@@ -52,11 +50,14 @@ const SignUp = () => {
   return (
     <Container>
       <Form
-        title="Create a new account"
+        title="Create an new account"
         description="everything with a * is required"
-        error={response.error || newUser.error}
+        error={getError || postError}
+        submit={handleSubmit}
       >
-        {response.error && <WarningText>Something went wrong</WarningText>}
+        {(getError || postError) && (
+          <WarningText>Something went wrong</WarningText>
+        )}
 
         <Input
           label="First name"
@@ -101,11 +102,12 @@ const SignUp = () => {
             firstName.length < 1 ||
             lastName.length < 1 ||
             email.length < 1 ||
-            password.length < 1
+            password.length < 8 ||
+            getLoading ||
+            postLoading
           }
-          action={sendDate}
         >
-          Create account
+          {getLoading || postLoading ? "loading" : "Create account"}
         </Button>
         <p>
           Already have an account?{" "}

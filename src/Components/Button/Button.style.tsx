@@ -9,9 +9,12 @@ export const ButtonBase = styled.button<{ disabled: boolean }>`
   ${(props) =>
     props.disabled &&
     css`
-      opacity: 0.8;
+      opacity: 0.5;
       cursor: not-allowed;
     `};
+  :focus {
+    outline: none;
+  }
 `;
 
 export const ButtonStyle = styled(ButtonBase)`

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Form component Test if form component renders with children 1`] = `
+<div>
+  <form
+    class="sc-bdfBwQ iHfWmQ"
+  >
+    <p>
+      I'm a form
+    </p>
+    <div
+      class="sc-jSgupP dehafT"
+    >
+      <input
+        autocomplete="text"
+        class="sc-gsTCUz btDedy"
+        name="label"
+        placeholder="I'm a placeholder"
+        type="text"
+        value="I'm the input value"
+      />
+    </div>
+  </form>
+</div>
+`;
+

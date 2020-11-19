@@ -16,7 +16,6 @@ This App is an assignment I've made to create an ReactJS application with the fo
 The application will be tested on correctness, code quality, testing, UX, documentation, technical choices.
 
 
-
 # To get started with the application
 
 You can peform the script below
@@ -48,17 +47,17 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm eject`
+## `Running Mock Server`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I've used JSON-server library to replicate the intended use of Postman.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The mock json can be found in `db-mock/db.json` and be run using the following script: `json-server --watch db-mock/db.json --port 3004 --delay 4000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Libraries
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Applications structure
+
+### Applications structure
 
 I've built the application to run logic from the container and pass this logic down to it the components used inside this container.
 This way I have more control of what the components should do and also allows the components to be easier to reuse.

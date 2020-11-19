@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Button component Test if Button component element changes to an anchor 1`] = `
+<div>
+  <a
+    class="sc-bdfBwQ sc-gsTCUz iDdfZq bhjXvn"
+    href="#"
+  >
+    I'm a button
+  </a>
+</div>
+`;
+
+exports[`Test the Button component Test if Button component renders with Text 1`] = `
+<div>
+  <button
+    class="sc-bdfBwQ sc-gsTCUz iDdfZq bhjXvn"
+    href=""
+  >
+    I'm a button
+  </button>
+</div>
+`;
