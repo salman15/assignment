@@ -12,6 +12,7 @@ exports[`Test the Form component Test if form component renders with children 1`
       class="sc-jSgupP dehafT"
     >
       <input
+        aria-label="text-input"
         autocomplete="text"
         class="sc-gsTCUz btDedy"
         name="label"
@@ -23,4 +24,3 @@ exports[`Test the Form component Test if form component renders with children 1`
   </form>
 </div>
 `;
-

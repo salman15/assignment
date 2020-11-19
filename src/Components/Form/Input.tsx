@@ -34,6 +34,7 @@ const Input: React.FC<InputProps> = ({
         type={type}
         placeholder={placeholder}
         value={inputValue}
+        aria-label={`${type}-input`}
         autoComplete={type}
         onChange={(e: { target: { value: any } }) =>
           setInputValue(e.target.value)

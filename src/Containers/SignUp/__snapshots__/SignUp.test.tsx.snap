@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the SignUp component Test if SignUp component renders with children 1`] = `
+<div>
+  <div
+    class="sc-pFZIQ cyLYfa"
+  >
+    <form
+      class="sc-hKgILt iuDjhV"
+    >
+      <h1>
+        Create an new account
+      </h1>
+      <p>
+        everything with a * is required
+      </p>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          First name
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="first-name-input"
+          autocomplete="first-name"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your name"
+          type="first-name"
+          value="John"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Last name
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="last-name-input"
+          autocomplete="last-name"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your last name"
+          type="last-name"
+          value="Wick"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Email
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="email-input"
+          autocomplete="email"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your email"
+          type="email"
+          value="john@email.com"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Password
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="password-input"
+          autocomplete="password"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your password"
+          type="password"
+          value="ImJohnWick"
+        />
+      </div>
+      <button
+        class="sc-bdfBwQ sc-gsTCUz iDdfZq bhjXvn"
+        href=""
+      >
+        Create account
+      </button>
+      <p>
+        Already have an account?
+         
+        <a
+          class="sc-bdfBwQ sc-dlfnbm iDdfZq bgwCyg"
+          href="#"
+        >
+          Sign in
+        </a>
+      </p>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Test the SignUp component Test if SignUp component renders with children and input values can be adjusted 1`] = `
+<div>
+  <div
+    class="sc-pFZIQ cyLYfa"
+  >
+    <form
+      class="sc-hKgILt iuDjhV"
+    >
+      <h1>
+        Create an new account
+      </h1>
+      <p>
+        everything with a * is required
+      </p>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          First name
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="first-name-input"
+          autocomplete="first-name"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your name"
+          type="first-name"
+          value="John"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Last name
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="last-name-input"
+          autocomplete="last-name"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your last name"
+          type="last-name"
+          value="Wick"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Email
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="email-input"
+          autocomplete="email"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your email"
+          type="email"
+          value="john@email.com"
+        />
+      </div>
+      <div
+        class="sc-fubCfw elfxoX"
+      >
+        <p
+          class="sc-jSgupP eHZQIR"
+        >
+          Password
+           
+          <span
+            class="sc-gKsewC eOGKIx"
+          >
+            *
+          </span>
+        </p>
+        <input
+          aria-label="password-input"
+          autocomplete="password"
+          class="sc-eCssSg crOsbw"
+          name="label"
+          placeholder="enter your password"
+          type="password"
+          value="ImJohnWick"
+        />
+      </div>
+      <button
+        class="sc-bdfBwQ sc-gsTCUz iDdfZq bhjXvn"
+        href=""
+      >
+        Create account
+      </button>
+      <p>
+        Already have an account?
+         
+        <a
+          class="sc-bdfBwQ sc-dlfnbm iDdfZq bgwCyg"
+          href="#"
+        >
+          Sign in
+        </a>
+      </p>
+    </form>
+  </div>
+</div>
+`;

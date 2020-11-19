@@ -12,6 +12,7 @@ exports[`Test the Input component Test if Input component element displays the l
        
     </p>
     <input
+      aria-label="text-input"
       autocomplete="text"
       class="sc-bdfBwQ fuywCS"
       name="label"
@@ -34,6 +35,7 @@ exports[`Test the Input component Test if Input component renders with input val
     class="sc-eCssSg iuAVtC"
   >
     <input
+      aria-label="text-input"
       autocomplete="text"
       class="sc-bdfBwQ fuywCS"
       name="label"

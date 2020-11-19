@@ -42,7 +42,6 @@ const SignUp = () => {
       getData(true);
       sendPost(true);
     } else {
-      console.log("invalid");
       setShowValidationErrors(true);
     }
   };
@@ -67,10 +66,11 @@ const SignUp = () => {
           inputValue={firstName}
           setInputValue={setFirstName}
           required
-          type="name"
+          type="first-name"
         />
         <Input
           label="Last name"
+          type="last-name"
           warning={showValidationErrors && !validName(lastName)}
           warningText="Incorrect last name"
           placeholder="enter your last name"
@@ -80,6 +80,7 @@ const SignUp = () => {
         />
         <Input
           label="Email"
+          type="email"
           warning={showValidationErrors && !validEmail(email)}
           warningText="Incorrect email"
           placeholder="enter your email"
